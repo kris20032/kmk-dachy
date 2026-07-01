@@ -3,144 +3,368 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KMK Dachy - Pokrycia dachowe i dekarstwo - okolicy</title>
-<meta name="description" content="KMK Dachy - dekarstwo i pokrycia dachowe: blachodachówka, dachówka, więźba, rynny i remonty dachów. Bezpłatny pomiar i wycena. Zobacz nasze realizacje.">
+<title>KMK Dachy - Dekarstwo i pokrycia dachowe - Płock, Rogozino i okolice</title>
+<meta name="description" content="KMK Dachy - dekarstwo i pokrycia dachowe w Płocku i okolicy: dachy skośne i płaskie, ocieplenia, obróbki blacharskie, rynny, więźba i remonty. Bezpłatny pomiar i wycena, usługa z materiałem na VAT 8%.">
+<meta property="og:title" content="KMK Dachy - Dekarstwo i pokrycia dachowe - Płock i okolice">
+<meta property="og:description" content="Solidny dach, który chroni Twój dom na lata. Bezpłatny pomiar i wycena. Ocena 5,0 w Google.">
+<meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 
-<header class="nav">
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <div class="tb-left">
+      <span class="tb-item tb-area"><svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg> Płock · Płońsk · Gostynin · Sierpc</span>
+      <span class="tb-item tb-hours"><svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.6 4 2.3-.9 1.5-5.1-3V6h2Z"/></svg> Pn-Pt 8:30-16:00, Sob 9:00-12:00</span>
+    </div>
+    <div class="tb-right">
+      <a class="tb-item" href="mailto:dachy.kmk@gmail.com"><svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm8 7L4.5 6.5v.1L12 12l7.5-5.4v-.1L12 11Z"/></svg> dachy.kmk@gmail.com</a>
+      <a class="tb-item tb-phone" href="tel:+48694556912"><svg viewBox="0 0 24 24" class="ico" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z"/></svg> +48 694 556 912</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="index.html"><span class="name">KMK Dachy</span><span class="sub">Pokrycia dachowe</span></a>
-    <nav class="nav-links">
-      <a href="oferta.html">Oferta</a>
-      <a href="realizacje.html">Realizacje</a>
-      <a href="o-nas.html">O nas</a>
-      <a href="kontakt.html">Kontakt</a>
-      <a href="tel:+48694556912" class="btn btn-accent">Zadzwoń +48 694 556 912</a>
+    <a class="brand" href="#top" aria-label="KMK Dachy - strona główna">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 40 40" width="40" height="40"><path d="M20 5 4 18h4v16h9v-9h6v9h9V18h4L20 5Z" fill="currentColor"/></svg>
+      </span>
+      <span class="brand-txt"><span class="name">KMK <b>Dachy</b></span><span class="sub">Dekarstwo i pokrycia dachowe</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#o-nas">O nas</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="tel:+48694556912" class="btn btn-accent nav-cta">Bezpłatna wycena</a>
     </nav>
-    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <button class="nav-toggle" id="navToggle" aria-label="Otwórz menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<section class="hero-fach">
-  <img class="hf-photo" src="img/hero.jpg" alt="KMK Dachy">
-  <div class="hf-panel">
-      <span class="hf-kicker">Dekarstwo i pokrycia dachowe - okolicy</span>
-      <h1 class="hf-title">Solidny dach, który chroni na lata</h1>
-      <a class="hf-phone" href="tel:+48694556912"><span class="hf-phone-lab">Zadzwoń teraz</span><span class="hf-phone-num"><svg class="ico-tel" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z" fill="currentColor"/></svg> +48 694 556 912</span></a>
-      <div class="hf-actions">
-        <a href="kontakt.html" class="btn btn-accent">Bezpłatna wycena <span class="arr">→</span></a>
-        <a href="tel:+48694556912" class="btn btn-ghost hf-ghost">Zadzwoń +48 694 556 912</a>
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-media">
+    <img src="img/hero.jpg" alt="Nowy dach wykonany przez KMK Dachy" fetchpriority="high">
+    <div class="hero-shade"></div>
+  </div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <span class="eyebrow eyebrow-light">Dekarstwo i pokrycia dachowe · Płock i okolice</span>
+      <h1>Solidny dach,<br>który chroni Twój dom <span class="hl">na lata</span></h1>
+      <p class="hero-lead">Dachy skośne i płaskie, ocieplenia, obróbki blacharskie, rynny i remonty. Od pomiaru, przez dobór materiału, po szczelny montaż - wszystko w jednych rękach, z gwarancją i uczciwym doradztwem.</p>
+      <div class="hero-actions">
+        <a href="#kontakt" class="btn btn-accent btn-lg">Bezpłatna wycena <span class="arr" aria-hidden="true">→</span></a>
+        <a href="#realizacje" class="btn btn-ghost-light btn-lg">Zobacz realizacje</a>
       </div>
-  </div>
-</section>
-<section class="fach-promise">
-  <div class="wrap">
-    <ul class="fp-row reveal"><li>Bezpłatna wycena</li><li>Gwarancja na robociznę</li></ul>
-  </div>
-</section>
-<section class="proces fachowcy">
-  <div class="wrap">
-    <div class="head center reveal">
-      <span class="eyebrow">Jak pracujemy</span>
-      <h2>Wiesz, na czym stoisz - na każdym etapie</h2>
-      <p>Prosty, przewidywalny proces. Bez niespodzianek i bez naciągania.</p>
-    </div>
-    <ol class="proces-line">
-      <li class="reveal"><span class="pno">01</span><h3>Bezpłatna wycena</h3><p>Przyjeżdżamy, oglądamy, doradzamy. Bez opłat i bez zobowiązań.</p></li>
-      <li class="reveal"><span class="pno">02</span><h3>Kosztorys i termin</h3><p>Jasna cena i termin na piśmie - zanim cokolwiek ruszy.</p></li>
-      <li class="reveal"><span class="pno">03</span><h3>Realizacja</h3><p>Robimy zgodnie ze sztuką, na czas, dbając o porządek.</p></li>
-      <li class="reveal"><span class="pno">04</span><h3>Odbiór i gwarancja</h3><p>Sprzątamy po sobie i dajemy gwarancję na robociznę.</p></li>
-    </ol>
-  </div>
-</section>
-<section class="gateways-band">
-  <div class="wrap">
-    <div class="gateways">
-      <a href="oferta.html" class="gateway reveal"><img src="img/g2.jpg" alt="Pokrycia dachowe" loading="lazy"><span class="g-ttl">Pokrycia dachowe</span></a>
-      <a href="oferta.html" class="gateway reveal"><img src="img/g3.jpg" alt="Więźba dachowa" loading="lazy"><span class="g-ttl">Więźba dachowa</span></a>
-      <a href="oferta.html" class="gateway reveal"><img src="img/g4.jpg" alt="Remonty i renowacje dachów" loading="lazy"><span class="g-ttl">Remonty i renowacje dachów</span></a>
+      <div class="hero-trust">
+        <span class="ht-item"><b>5,0</b> ★ ocena w Google</span>
+        <span class="ht-sep" aria-hidden="true"></span>
+        <span class="ht-item">Usługa z materiałem na <b>VAT 8%</b></span>
+        <span class="ht-sep" aria-hidden="true"></span>
+        <span class="ht-item"><b>Bezpłatny</b> pomiar i wycena</span>
+      </div>
     </div>
   </div>
+  <a href="tel:+48694556912" class="hero-callcard">
+    <span class="hc-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z"/></svg></span>
+    <span class="hc-txt"><span class="hc-lab">Zadzwoń i zapytaj o wycenę</span><span class="hc-num">+48 694 556 912</span></span>
+  </a>
 </section>
-<section class="fach-uslugi">
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Co robimy</span>
-      <h2>Nasze usługi</h2>
-      <p>Każdy dach traktujemy indywidualnie - dobieramy pokrycie, konstrukcję i obróbki tak, by służył dziesięciolecia.</p>
-    </div>
-    <ul class="fu-list">
-      <li class="fu-row reveal"><div class="fu-name">Pokrycia dachowe</div><div class="fu-desc">Blachodachówka, dachówka ceramiczna i betonowa, blacha na rąbek - dobieramy pokrycie do bryły Twojego dachu.</div><a class="fu-cta" href="kontakt.html">Wycena <span class="arr">→</span></a></li>
-      <li class="fu-row reveal"><div class="fu-name">Więźba dachowa</div><div class="fu-desc">Konstrukcje dachowe od podstaw - solidna ciesielka pod każdy kształt i spadek dachu.</div><a class="fu-cta" href="kontakt.html">Wycena <span class="arr">→</span></a></li>
-      <li class="fu-row reveal"><div class="fu-name">Remonty i renowacje dachów</div><div class="fu-desc">Wymiana pokrycia, naprawa przecieków, docieplenie - przywracamy dach do pełnej sprawności.</div><a class="fu-cta" href="kontakt.html">Wycena <span class="arr">→</span></a></li>
-      <li class="fu-row reveal"><div class="fu-name">Rynny i obróbki blacharskie</div><div class="fu-desc">Systemy rynnowe i obróbki, które odprowadzają wodę tam, gdzie trzeba - bez zacieków na elewacji.</div><a class="fu-cta" href="kontakt.html">Wycena <span class="arr">→</span></a></li>
-      <li class="fu-row reveal"><div class="fu-name">Okna dachowe i podbitki</div><div class="fu-desc">Montaż okien dachowych, podbitki i wykończenia, które domykają dach estetycznie i szczelnie.</div><a class="fu-cta" href="kontakt.html">Wycena <span class="arr">→</span></a></li>
-      <li class="fu-row reveal"><div class="fu-name">Papa i dachy płaskie</div><div class="fu-desc">Pokrycia papowe i membrany na dachy płaskie, tarasy i garaże - szczelnie i na lata.</div><a class="fu-cta" href="kontakt.html">Wycena <span class="arr">→</span></a></li>
-    </ul>
-    <div style="margin-top:var(--space-7)" class="reveal"><a href="oferta.html" class="btn btn-ghost">Pełna oferta <span class="arr">→</span></a></div>
+
+<!-- STATS BAND (uczciwe, nie zmyślone) -->
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><span class="stat-num">5,0<span class="stat-star">★</span></span><span class="stat-lab">Ocena w Google</span></div>
+    <div class="stat"><span class="stat-num">VAT 8%</span><span class="stat-lab">Usługa z materiałem</span></div>
+    <div class="stat"><span class="stat-num">0 zł</span><span class="stat-lab">Pomiar i wycena</span></div>
+    <div class="stat"><span class="stat-num">Gwarancja</span><span class="stat-lab">Na wykonanie</span></div>
   </div>
 </section>
-<section>
-  <div class="wrap">
-    <div class="head reveal">
-      <span class="eyebrow">Realizacje</span>
-      <h2>Nasze realizacje</h2>
-      <p>Zobacz dachy, które kryliśmy - od blachodachówki i dachówki ceramicznej po remonty i obróbki na domach naszych klientów.</p>
+
+<!-- GWARANCJA JAKOŚCI -->
+<section class="promise" id="o-nas">
+  <div class="wrap promise-grid">
+    <div class="promise-media reveal">
+      <img src="img/g7.jpg" alt="Zadbany, gotowy dach domu jednorodzinnego" loading="lazy">
+      <div class="promise-badge"><b>KMK</b><span>Dachy</span></div>
     </div>
-    <div class="gallery">
-      <div class="tile t-two3 reveal"><img src="img/g5.jpg" alt="Dach z blachodachówki" loading="lazy"><div class="cap">Dach z blachodachówki</div></div>
-      <div class="tile t-third reveal"><img src="img/g6.jpg" alt="Dachówka ceramiczna" loading="lazy"><div class="cap">Dachówka ceramiczna</div></div>
-      <div class="tile t-third reveal"><img src="img/g7.jpg" alt="Więźba dachowa" loading="lazy"><div class="cap">Więźba dachowa</div></div>
-      <div class="tile t-third reveal"><img src="img/g9.jpg" alt="Remont dachu" loading="lazy"><div class="cap">Remont dachu</div></div>
-    </div>
-    <div style="margin-top:var(--space-7)" class="reveal"><a href="realizacje.html" class="btn btn-accent">Pełna galeria <span class="arr">→</span></a></div>
-  </div>
-</section>
-<section class="cta">
-  <div class="wrap">
-    <div class="reveal">
-      <span class="eyebrow">Współpraca</span>
-      <h2>Potrzebujesz fachowca? Wycenimy za darmo.</h2>
-      <p>Zadzwoń lub napisz - przyjedziemy, obejrzymy i podamy jasną cenę. Bez zobowiązań.</p>
-    </div>
-    <div class="cta-actions reveal">
-      <a href="kontakt.html" class="btn btn-light">Bezpłatna wycena <span class="arr">→</span></a>
-      <a href="tel:+48694556912" class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.3)">+48 694 556 912</a>
+    <div class="promise-copy reveal">
+      <span class="eyebrow">Dlaczego KMK Dachy</span>
+      <h2>Dach robimy tak, jakby miał chronić nasz własny dom</h2>
+      <p>KMK Dachy to dekarze z okolic Płocka, dla których dach znaczy więcej niż samo pokrycie - to ochrona całego domu na dekady. Pracujemy solidnie, na sprawdzonych materiałach i z dbałością o każdy detal: kalenicę, kosz, obróbkę komina.</p>
+      <ul class="promise-list">
+        <li><span class="pl-ico" aria-hidden="true">✓</span> Indywidualne podejście do każdego dachu</li>
+        <li><span class="pl-ico" aria-hidden="true">✓</span> Uczciwe doradztwo - powiemy, co ma sens, a na czym szkoda pieniędzy</li>
+        <li><span class="pl-ico" aria-hidden="true">✓</span> Materiały sprawdzonych marek</li>
+        <li><span class="pl-ico" aria-hidden="true">✓</span> Jasna wycena i termin na piśmie</li>
+        <li><span class="pl-ico" aria-hidden="true">✓</span> Po pracy zostawiamy porządek</li>
+      </ul>
+      <a href="#kontakt" class="btn btn-primary">Porozmawiajmy o Twoim dachu <span class="arr" aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
 
-<footer>
+<!-- VAT 8% BAND -->
+<section class="vatband">
+  <div class="wrap vatband-inner">
+    <span class="vb-badge">VAT 8%</span>
+    <p>U nas kupisz <b>usługę z materiałem na VAT 8%</b> - dla domów i budynków mieszkalnych. Jedna faktura, niższy koszt, bez kombinowania.</p>
+    <a href="#kontakt" class="btn btn-light">Zapytaj o wycenę</a>
+  </div>
+</section>
+
+<!-- USŁUGI -->
+<section class="services" id="oferta">
   <div class="wrap">
-    <div class="foot-grid">
-      <div class="foot-brand">
-        <div class="name">KMK Dachy</div>
-        <p>Pokrycia dachowe, więźba, rynny i remonty dachów.</p>
-      </div>
-      <div class="foot-col">
-        <h4>Nawigacja</h4>
-        <a href="oferta.html">Oferta</a>
-        <a href="realizacje.html">Realizacje</a>
-        <a href="o-nas.html">O nas</a>
-        <a href="kontakt.html">Kontakt</a>
-      </div>
-      <div class="foot-col">
-        <h4>Kontakt</h4>
-        <a href="tel:+48694556912">+48 694 556 912</a>
+    <div class="head center reveal">
+      <span class="eyebrow">Co robimy</span>
+      <h2>Nasze usługi dekarskie</h2>
+      <p>Każdy dach traktujemy indywidualnie - dobieramy pokrycie, konstrukcję i obróbki tak, by służył dziesięciolecia.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc reveal">
+        <span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 2 11h3v9h5v-6h4v6h5v-9h3L12 3Z"/></svg></span>
+        <h3>Pokrycia dachowe</h3>
+        <p>Blachodachówka, dachówka ceramiczna i betonowa, blacha na rąbek - dobrane do bryły Twojego dachu.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 20h18v-2H3v2Zm2-4h14l-7-9-7 9Z"/></svg></span>
+        <h3>Dachy płaskie - papa i membrana</h3>
+        <p>Pokrycia papowe i membrany na dachy płaskie, tarasy i garaże. Szczelnie, warstwa po warstwie, na lata.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 3 7v10l9 5 9-5V7l-9-5Zm0 2.3 6.5 3.6L12 11.5 5.5 7.9 12 4.3Z"/></svg></span>
+        <h3>Ocieplenia dachu i stropu</h3>
+        <p>Docieplenie połaci i stropodachu - cieplejszy dom zimą, chłodniejszy latem i niższe rachunki.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4h2v14a2 2 0 0 0 2 2h12v2H8a4 4 0 0 1-4-4V4Zm4 0h12v12H8V4Z"/></svg></span>
+        <h3>Obróbki blacharskie</h3>
+        <p>Obróbki komina, kalenicy, kosza i pasów nadrynnowych - to one decydują o szczelności całego dachu.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 6h18v3H3V6Zm2 5h14v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9Zm5 2v5h4v-5h-4Z"/></svg></span>
+        <h3>Rynny i systemy rynnowe</h3>
+        <p>Montaż i wymiana rynien oraz rur spustowych - woda odprowadzona tam, gdzie trzeba, bez zacieków na elewacji.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 2 9h3v11h14V9h3L12 2Zm-1 8h2v8h-2v-8Z"/></svg></span>
+        <h3>Więźba dachowa i ciesielstwo</h3>
+        <p>Konstrukcje dachowe od podstaw - solidna ciesielka pod każdy kształt i spadek dachu.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 3 10h2v10h14V10h2L12 3Zm-2 9h4v6h-4v-6Z"/></svg></span>
+        <h3>Remonty i naprawy dachów</h3>
+        <p>Wymiana pokrycia, naprawa przecieków, usuwanie usterek - przywracamy dach do pełnej sprawności.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 3 10h18L12 3Zm-7 9v8h14v-8H5Zm5 2h4v4h-4v-4Z"/></svg></span>
+        <h3>Okna dachowe i podbitki</h3>
+        <p>Montaż okien dachowych, podbitki i wykończenia, które domykają dach estetycznie i szczelnie.</p>
+      </article>
+      <article class="svc reveal">
+        <span class="svc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 2h4v6l-2 2-2-2V2Zm-2 8h16v12H4V10Zm4 3v6h8v-6H8Z"/></svg></span>
+        <h3>Kominy i obróbki komina</h3>
+        <p>Uszczelnienie i obróbka komina, montaż kołnierzy i czapek - koniec z zaciekami przy kominie.</p>
+      </article>
+    </div>
+    <p class="svc-note reveal">Nie widzisz swojego tematu na liście? <a href="tel:+48694556912">Zadzwoń</a> - doradzimy i wycenimy za darmo.</p>
+  </div>
+</section>
+
+<!-- DLACZEGO MY -->
+<section class="why">
+  <div class="wrap why-grid">
+    <div class="why-copy reveal">
+      <span class="eyebrow">Dlaczego my</span>
+      <h2>Dach to nie miejsce na oszczędności i półśrodki</h2>
+      <p>Zły dach potrafi latami niszczyć dom niezauważony. Dlatego u nas liczy się fachowe wykonanie i uczciwe podejście - a nie najniższa cena za wszelką cenę. Doradzimy pokrycie dopasowane do bryły domu i budżetu, podamy jasną wycenę i dotrzymamy terminu.</p>
+      <div class="why-cta-row">
+        <a href="#kontakt" class="btn btn-primary">Bezpłatna wycena <span class="arr" aria-hidden="true">→</span></a>
+        <a href="tel:+48694556912" class="why-tel">lub zadzwoń: <b>+48 694 556 912</b></a>
       </div>
     </div>
-    <div class="foot-bot">
-      <span>© 2026 KMK Dachy</span>
-      <span>Projekt strony: Krzysztof Brzeziński</span>
+    <div class="why-values">
+      <div class="val reveal"><span class="val-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 4 6v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6l-8-4Zm-1 13-3-3 1.4-1.4L11 12.2l4.6-4.6L17 9l-6 6Z"/></svg></span><h4>Fachowość</h4><p>Robimy zgodnie ze sztuką dekarską i sprawdzonymi technologiami.</p></div>
+      <div class="val reveal"><span class="val-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 1 5 5c0 2-1 3-2 4l-1 1v2h-4v-2l-1-1c-1-1-2-2-2-4a5 5 0 0 1 5-5Zm-2 15h4v2h-4v-2Z"/></svg></span><h4>Uczciwe doradztwo</h4><p>Powiemy wprost, co ma sens, a na czym szkoda Twoich pieniędzy.</p></div>
+      <div class="val reveal"><span class="val-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5Zm0 7L2 4v0m20 3-10 5L2 12v5l10 5 10-5v-5Z"/></svg></span><h4>Solidne materiały</h4><p>Pracujemy na materiałach sprawdzonych marek, nie na przypadkowych zamiennikach.</p></div>
+      <div class="val reveal"><span class="val-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.6 4 2.3-.9 1.5-5.1-3V6h2v6.6Z"/></svg></span><h4>Terminowość i porządek</h4><p>Trzymamy się terminu, a po pracy zostawiamy plac czysty.</p></div>
     </div>
   </div>
+</section>
+
+<!-- PRODUCENCI / MARKI -->
+<section class="brands">
+  <div class="wrap">
+    <p class="brands-lead reveal">Pracujemy na materiałach sprawdzonych producentów</p>
+    <div class="brands-row reveal">
+      <span class="brand-chip">Blachotrapez</span>
+      <span class="brand-chip">Budmat</span>
+      <span class="brand-chip">Braas</span>
+      <span class="brand-chip">Creaton</span>
+      <span class="brand-chip">Roto</span>
+      <span class="brand-chip">Velux</span>
+      <span class="brand-chip">Galeco</span>
+      <span class="brand-chip">iZOBUD</span>
+    </div>
+  </div>
+</section>
+
+<!-- REALIZACJE / GALERIA -->
+<section class="gallery-sec" id="realizacje">
+  <div class="wrap">
+    <div class="head center reveal">
+      <span class="eyebrow">Realizacje</span>
+      <h2>Dachy, które kryliśmy</h2>
+      <p>Od blachodachówki i dachówki ceramicznej, przez blachę na rąbek, po dachy płaskie, ocieplenia i obróbki blacharskie.</p>
+    </div>
+    <div class="gallery" id="gallery">
+      <a class="tile reveal" href="img/real1.jpg" data-cap="Dach płaski - papa podkładowa i obróbki, realizacja KMK Dachy"><img src="img/real1.jpg" alt="Dach płaski w trakcie prac - realizacja KMK Dachy" loading="lazy"><span class="tile-tag">Nasza realizacja</span></a>
+      <a class="tile reveal" href="img/g1.jpg" data-cap="Dachówka ceramiczna - dach skośny"><img src="img/g1.jpg" alt="Dach z dachówki ceramicznej" loading="lazy"></a>
+      <a class="tile reveal" href="img/g10.jpg" data-cap="Blacha na rąbek stojący z oknem dachowym"><img src="img/g10.jpg" alt="Dach z blachy na rąbek stojący" loading="lazy"></a>
+      <a class="tile reveal" href="img/g2.jpg" data-cap="Dachówka ceramiczna z oknami połaciowymi i kominami"><img src="img/g2.jpg" alt="Dach z dachówki z oknami połaciowymi" loading="lazy"></a>
+      <a class="tile reveal" href="img/g6.jpg" data-cap="Dach z gontu - lukarny i obróbki"><img src="img/g6.jpg" alt="Dach z gontu z lukarnami" loading="lazy"></a>
+      <a class="tile reveal" href="img/g13.jpg" data-cap="Więźba dachowa - konstrukcja od podstaw"><img src="img/g13.jpg" alt="Więźba dachowa w budowie" loading="lazy"></a>
+      <a class="tile reveal" href="img/g9.jpg" data-cap="Dachówka ceramiczna - gotowa połać"><img src="img/g9.jpg" alt="Gotowy dach z dachówki ceramicznej" loading="lazy"></a>
+      <a class="tile reveal" href="img/g11.jpg" data-cap="Dom jednorodzinny - kompletne pokrycie dachu"><img src="img/g11.jpg" alt="Dom jednorodzinny z nowym dachem" loading="lazy"></a>
+    </div>
+    <p class="gallery-note reveal">To przykładowa galeria demonstracyjna. Na Twojej stronie umieścimy zdjęcia realnych realizacji KMK Dachy.</p>
+  </div>
+</section>
+
+<!-- OPINIE -->
+<section class="reviews" id="opinie">
+  <div class="wrap">
+    <div class="head center reveal">
+      <span class="eyebrow">Opinie</span>
+      <h2>Co mówią klienci</h2>
+      <div class="rev-rating"><span class="rr-stars" aria-hidden="true">★★★★★</span> <b>5,0</b> w Google <span class="rr-count">· na podstawie opinii klientów</span></div>
+    </div>
+    <div class="rev-grid">
+      <figure class="rev reveal">
+        <div class="rev-stars" aria-hidden="true">★★★★★</div>
+        <blockquote>Solidna robota, moim zdaniem znają się na swoim fachu. Plus też za to, że doradzili kilka rozwiązań, ale też potrafili wytłumaczyć, dlaczego niektóre rzeczy nie mają sensu i szkoda na nie moich pieniędzy. Polecam.</blockquote>
+        <figcaption><span class="rev-av">RS</span><span><b>Rafał Szymczak</b><span class="rev-src">Opinia Google</span></span></figcaption>
+      </figure>
+      <figure class="rev reveal">
+        <div class="rev-stars" aria-hidden="true">★★★★★</div>
+        <blockquote>Bardzo solidne wykonanie ocieplenia stropu i dachu, obróbki blacharskie również super. Panowie zawsze służą profesjonalną poradą. Polecam bardzo KMK Dachy - solidna i uczciwa firma.</blockquote>
+        <figcaption><span class="rev-av">D</span><span><b>Damian</b><span class="rev-src">Opinia Google</span></span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="contact" id="kontakt">
+  <div class="wrap">
+    <div class="head center reveal">
+      <span class="eyebrow">Kontakt</span>
+      <h2>Masz pytania? Potrzebujesz wyceny?</h2>
+      <p>Zadzwoń lub napisz - przyjedziemy, obejrzymy dach i podamy jasną cenę. Bez zobowiązań.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <a class="ci-row" href="tel:+48694556912">
+          <span class="ci-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z"/></svg></span>
+          <span><span class="ci-lab">Telefon</span><span class="ci-val">+48 694 556 912</span></span>
+        </a>
+        <a class="ci-row" href="mailto:dachy.kmk@gmail.com">
+          <span class="ci-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm8 7L4.5 6.5v.1L12 12l7.5-5.4v-.1L12 11Z"/></svg></span>
+          <span><span class="ci-lab">E-mail</span><span class="ci-val">dachy.kmk@gmail.com</span></span>
+        </a>
+        <div class="ci-row">
+          <span class="ci-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>
+          <span><span class="ci-lab">Siedziba i obszar</span><span class="ci-val">Rogozino k. Płocka · działamy w Płocku, Płońsku, Gostyninie i Sierpcu</span></span>
+        </div>
+        <div class="ci-row">
+          <span class="ci-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm1 10.6 4 2.3-.9 1.5-5.1-3V6h2v6.6Z"/></svg></span>
+          <span><span class="ci-lab">Godziny</span><span class="ci-val">Pn-Pt 8:30-16:00, Sob 9:00-12:00, Ndz nieczynne</span></span>
+        </div>
+        <a href="tel:+48694556912" class="btn btn-accent btn-lg ci-callbtn">Zadzwoń teraz <span class="arr" aria-hidden="true">→</span></a>
+      </div>
+
+      <form class="contact-form reveal" onsubmit="return false" aria-label="Formularz zapytania o wycenę">
+        <p class="cf-title">Zapytaj o bezpłatną wycenę</p>
+        <label>Imię i nazwisko<input type="text" name="name" placeholder="Jan Kowalski" autocomplete="name"></label>
+        <label>Telefon<input type="tel" name="phone" placeholder="np. 600 000 000" autocomplete="tel"></label>
+        <label>Czego dotyczy dach?<textarea name="msg" rows="4" placeholder="Np. nowy dach na domu jednorodzinnym, wymiana pokrycia, naprawa przecieku..."></textarea></label>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Wyślij zapytanie</button>
+        <span class="cf-hint">To formularz demonstracyjny. Najszybciej: <a href="tel:+48694556912">zadzwoń +48 694 556 912</a>.</span>
+      </form>
+    </div>
+
+    <a class="map reveal" href="https://www.google.com/maps/search/?api=1&query=52.5676802%2C19.8108011&query_place_id=ChIJh6Hk4fpxHEcRSQoTngtMgwk" target="_blank" rel="noopener" aria-label="Lokalizacja KMK Dachy w Google Maps">
+      <img src="img/mapa.jpg" alt="Lokalizacja KMK Dachy - Mazowiecka 55, Rogozino k. Płocka" loading="lazy">
+    </a>
+    <p class="map-link reveal"><a href="https://www.google.com/maps/search/?api=1&query=52.5676802%2C19.8108011&query_place_id=ChIJh6Hk4fpxHEcRSQoTngtMgwk" target="_blank" rel="noopener">Zobacz dojazd w Google Maps →</a></p>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <div class="brand foot-brand-lock">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40" width="34" height="34"><path d="M20 5 4 18h4v16h9v-9h6v9h9V18h4L20 5Z" fill="currentColor"/></svg></span>
+        <span class="name">KMK <b>Dachy</b></span>
+      </div>
+      <p>Dekarstwo i pokrycia dachowe w Płocku i okolicy. Dachy skośne i płaskie, ocieplenia, obróbki blacharskie, rynny, więźba i remonty.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Oferta</h4>
+      <a href="#oferta">Pokrycia dachowe</a>
+      <a href="#oferta">Dachy płaskie</a>
+      <a href="#oferta">Obróbki blacharskie</a>
+      <a href="#oferta">Rynny i remonty</a>
+    </div>
+    <div class="foot-col">
+      <h4>Firma</h4>
+      <a href="#o-nas">O nas</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
+    <div class="foot-col">
+      <h4>Kontakt</h4>
+      <a href="tel:+48694556912">+48 694 556 912</a>
+      <a href="mailto:dachy.kmk@gmail.com">dachy.kmk@gmail.com</a>
+      <span class="foot-plain">Rogozino k. Płocka</span>
+      <span class="foot-plain">Pn-Pt 8:30-16:00, Sob 9:00-12:00</span>
+    </div>
+  </div>
+  <div class="wrap foot-bot">
+    <span>© 2026 KMK Dachy. Wszelkie prawa zastrzeżone.</span>
+    <span class="foot-credit">Projekt strony: Krzysztof Brzeziński</span>
+  </div>
 </footer>
-<div class="sticky-call"><a class="sc-call" href="tel:+48694556912"><svg class="ico-tel" width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z" fill="currentColor"/></svg> Zadzwoń</a><a class="sc-quote" href="kontakt.html">Bezpłatna wycena</a></div>
+
+<!-- STICKY MOBILE CALL -->
+<div class="sticky-call">
+  <a class="sc-call" href="tel:+48694556912"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.58 3.6a1 1 0 0 1-.25 1l-2.23 2.2Z"/></svg> Zadzwoń</a>
+  <a class="sc-quote" href="#kontakt">Bezpłatna wycena</a>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="Zamknij">×</button>
+  <button class="lb-prev" id="lbPrev" aria-label="Poprzednie">‹</button>
+  <figure class="lb-figure"><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-next" id="lbNext" aria-label="Następne">›</button>
+</div>
 
 <script src="assets/main.js"></script>
 </body>
