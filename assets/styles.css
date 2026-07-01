@@ -109,6 +109,26 @@ section{position:relative}
 .hc-lab{font-size:.78rem;color:var(--muted)}
 .hc-num{font-family:var(--fh);font-weight:800;font-size:1.24rem;color:var(--blue)}
 
+/* ===== Nav active (podstrony) ===== */
+.nav-links>a.active{color:var(--blue)}
+.nav-links>a.active::after{width:100%}
+
+/* ===== Pagehead (nagłówek podstrony) ===== */
+.pagehead{position:relative;height:clamp(240px,32vw,340px);display:flex;align-items:center;color:#fff;overflow:hidden;border-bottom:3px solid var(--amber)}
+.pagehead>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.pagehead::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(5,40,66,.92),rgba(6,63,104,.5));z-index:1}
+.pagehead .wrap{position:relative;z-index:2}
+.pagehead .eyebrow{color:#bfe0f7}
+.pagehead h1{color:#fff;margin-bottom:0;font-size:clamp(2rem,4.6vw,3rem)}
+.pagehead p{color:#e7f1f8;max-width:660px;margin-top:12px}
+
+/* ===== CTA band (podstrony) ===== */
+.ctaband{padding:76px 0;background:linear-gradient(120deg,var(--blue-dd),var(--blue));color:#fff;text-align:center}
+.ctaband h2{color:#fff}
+.ctaband p{color:#cfe6f5;max-width:580px;margin:14px auto 26px}
+.ctaband .btn-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.step-no{font-family:var(--fh);font-weight:800;font-size:1.3rem;color:var(--blue)}
+
 /* ===== Stats ===== */
 .stats{background:var(--blue);color:#fff}
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr)}
@@ -151,7 +171,8 @@ section{position:relative}
 .svc:hover .svc-ico{background:var(--blue);color:#fff}
 .svc h3{margin-bottom:9px;font-size:1.14rem}
 .svc p{color:var(--muted);font-size:.97rem}
-.svc-note{text-align:center;margin-top:34px;color:var(--muted)}
+.svc-note{text-align:center;margin-top:18px;color:var(--muted)}
+.svc-more{text-align:center;margin-top:34px}
 .svc-note a{color:var(--blue);font-weight:700}
 
 /* ===== Why ===== */
