@@ -65,7 +65,7 @@ section{position:relative}
 .ico{width:15px;height:15px;fill:currentColor;flex:none;opacity:.9}
 
 /* ===== Nav ===== */
-.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid var(--line);transition:box-shadow .2s}
+.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);transition:box-shadow .2s}
 .nav.scrolled{box-shadow:0 6px 22px -16px rgba(11,53,84,.5)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;min-height:74px;gap:20px}
 .brand{display:inline-flex;align-items:center;gap:12px}
