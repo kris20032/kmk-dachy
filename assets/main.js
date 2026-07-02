@@ -7,8 +7,8 @@
   var backdrop = document.createElement('div');
   backdrop.className = 'nav-backdrop';
   document.body.appendChild(backdrop);
-  function closeMenu(){ links.classList.remove('open'); toggle.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); backdrop.classList.remove('show'); }
-  function openMenu(){ links.classList.add('open'); toggle.classList.add('open'); toggle.setAttribute('aria-expanded','true'); backdrop.classList.add('show'); }
+  function closeMenu(){ links.classList.remove('open'); toggle.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); backdrop.classList.remove('show'); document.body.classList.remove('menu-open'); }
+  function openMenu(){ links.classList.add('open'); toggle.classList.add('open'); toggle.setAttribute('aria-expanded','true'); backdrop.classList.add('show'); document.body.classList.add('menu-open'); }
   if (toggle) toggle.addEventListener('click', function(){ links.classList.contains('open') ? closeMenu() : openMenu(); });
   backdrop.addEventListener('click', closeMenu);
   if (links) links.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
