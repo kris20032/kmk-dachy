@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kris20032.github.io/kmk-dachy/sitemap.xml
